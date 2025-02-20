@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Clarissa Le
+- **Dot Number**: le.701
+- **Due Date**: Feb 4, 2025 @12:40
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+Interests that I may have are listening to music, watching movies/shows, playing games, hanging out with family and friends, palying with my dog, etc. To be honest I am not quite sure what my career goals kind of in a cloudy space right now but it's whatever.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -131,8 +115,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +182,88 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Pomodoro timer
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The purpose of this component is help everyone (especially students) who would like to space out their time doing tasks such as studying. The goal of this component is to have the user input their desired times and have it looped until the user is done. (Side Note: A reach goal of this component is to have some background music to help during their task but for now that is just a thought.)
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - void multiplyBy10(int n): multiplies this by 10 and adds n (probably will be used for minutes and seconds)
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+      boolean isZero(): reports whether the timer is zero
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - void add(int n): adds n to time
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+      void subtract(int n): subtracts n from time
+
+      void multiply(int n): multiplies time by n
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes this component would be mutable as we would need to be to change the time such as adding subtracting, etc.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No I do not believe this component would need to rely on any internal classes since this component is mainly using NaturalNumbers and integers.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know :(
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes I can implement my secondary methods using my kernal methods. For exmaple when the user wants to add a certain amount of time (n let's say n = 300 sec = 5 min) to their existing time. The existing time will be in seconds rather than minutes (since it would be confusing, exiting time = 1800 sec which is 30 mins) then we would use the multiplyby10(30) to get 30 sec then multiplyby10(0) to get 300 (sec) which we would then add to our existing time of 1800 to get 2100 sec = 35 min.
+
+- Component Design #2: To-Do List
+  - **Description**:
+    - The purpose of this component is to have the user input their tasks (potentially with due dates) and the program will list the tasks by top to low priority.
+  - **Kernel Methods**:
+    - void add(K key, V value) : adds a new task to the list
+
+      Map.Pair<K,V> remove(K key) : remove task
+
+      int size() : tells use the size of to-do list
+  - **Secondary Methods**:
+    - getTaskDueDate : retrives the due date
+
+      hasTask : reports to us if there is already an existing task
+
+      isEmpty : returns true if there are no tasks, otherwise returns false
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes this component would be mutable as the list would need to add, remove, and change tasks.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - Yes this component would reply on internal classes such as Map.Pair because this component essentially will use a map for an example the key would be the task and the value would be the due date.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - I do not believe so.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - I don't know.
+
+- Component Design #3: Jumping Game
+  - **Description**:
+    - The purpose of this component is for the user to play a game with just using their space bar similar to the no wifi dinosaur jumping game.
+  - **Kernel Methods**:
+    - setPosition : sets the starting position of the player
+
+      isSpaceBarPressed() : detects whether the space bar is being pressef therfore making the player jump
+
+      move() : moves the player on screen
+  - **Secondary Methods**:
+    - jump() : when the space bar is used the player will jump
+
+    jumpHeight() : sets the jumping height of the player
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes because the player would need to be able to move for the game to play.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - I don't think so.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - I don't know
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes isSpaceBarPressed() can be used then the player will implement the jump() and jumpHeight() method.
 
 ## Post-Assignment
 
@@ -269,8 +271,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -292,9 +292,9 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
-- Designed a <!-- insert name of component 1 here --> component
-- Designed a <!-- insert name of component 2 here --> component
-- Designed a <!-- insert name of component 3 here --> component
+- Designed a Pomodoro Timer component
+- Designed a To-Do List component
+- Designed a Jumping Game component
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
@@ -309,8 +309,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -319,11 +317,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -349,8 +343,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/

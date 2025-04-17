@@ -16,6 +16,10 @@ import components.simplewriter.SimpleWriter1L;
  * input/output (SimpleReader and SimpleWriter) which makes it easy use for
  * everyone.
  *
+ * * The reason why I chose this design is to help aid people specifically
+ * students (me lol) organize their time wisely for work and break.
+ *  I have always liked the idea of a pomodoro timer and essentially how it works
+ * so by implementing this it helps me learn on how exactly a pomodoro timer works.
  * Real world factors: - User flexibility: The timer can be used as an actual
  * timer where it counts down from a given time that the user has input.
  *

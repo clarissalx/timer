@@ -1,0 +1,74 @@
+import components.standard.Standard;
+
+/**
+ * Interface for a Pomodoro Timer kernel component with primary methods.
+ *
+ * This interface defines methods to manage a Pomodoro-like timer with the basic
+ * functions of setting, starting, pausing, stopping, and resting.
+ *
+ * @initially 
+ *  ensures
+ *   isRunning = false and
+ *   remainingTime = 0
+ */
+public interface TimerKernel extends Standard<Timer> {
+
+/**
+* Sets the timer for the given number of minutes provided by user.
+*
+* @param minutes
+*            the number of minutes to set for the timer
+* @updates remainingTime
+* @ensures remainingTime = minutes * 60
+*/
+void setTimer(int minutes);
+
+/**
+* Starts the countdown of the timer.
+*
+* @updates remainingTime
+* @ensures Timer counts down from remainingTime to 0 unless paused or
+*          stopped.
+*/
+void startTimer();
+
+/**
+* Pauses the current timer countdown.
+*
+* @updates isRunning
+* @ensures isRunning = false and remainingTime is unchanged
+*/
+void pauseTimer();
+
+/**
+* Stops the timer and resets the time.
+*
+* @updates isRunning, remainingTime
+* @ensures isRunning = false and remainingTime = 0
+*/
+void stopTimer();
+
+/**
+* Sets and starts a rest timer after a work session.
+*
+* @param minutes
+*            number of minutes to rest
+* @updates remainingTime
+* @ensures Timer is reset to minutes * 60 and starts counting down
+*/
+void restTime(int minutes);
+
+/**
+* Returns the current remaining time in minutes and seconds.
+*
+* @return the number of seconds remaining in the timer
+*/
+int getRemainingTime();
+
+/**
+* Returns whether the timer is currently running.
+*
+* @return true if the timer is running, false otherwise
+*/
+boolean isRunning();
+}

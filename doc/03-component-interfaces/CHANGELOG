@@ -1,0 +1,25 @@
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Calendar Versioning](https://calver.org/) of
+the following form: YYYY.0M.0D.
+
+## 2025.02.04
+
+### Added
+
+- Designed a Pomodoro Timer component
+- Designed a To-Do ist component
+- Designed a Jumping Game component
+
+## 2025.04.18
+
+### Added
+
+- Designed kernel and enhanced interfaces for timer component
+
+### Updated
+
+- Changed design to include sleep function (try and catch) so that the timer outputs like an actual timer
+

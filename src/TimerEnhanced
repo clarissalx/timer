@@ -1,0 +1,65 @@
+/**
+ * {@code Timer} interface provides methods for controlling a Pomodoro styled
+ * timer and displaying its state.
+ *
+ * It extends {@code TimerKernel}.
+ *
+ * @initially The timer is stopped, and the remaining time is set to work
+ *            session duration. The timer can be started, paused, stopped, and
+ *            reset. The remaining time is to be displayed as strings.
+ *
+ * @author Clarissa Le
+ */
+public interface Timer extends TimerKernel {
+
+    /**
+     * Pauses the timer.
+     *
+     * @ensures isRunning = false
+     */
+    void pause();
+
+    /**
+     * Stops and resets the timer.
+     *
+     * @ensures remainingTime = sessionLength and isRunning = false
+     */
+    void stop();
+
+    /**
+     * Switches between work and break sessions.
+     *
+     * @ensures isWorkSession = !#isWorkSession AND remainingTime is set to new
+     *          session's length
+     */
+    void switchSession();
+
+    /**
+     * Gets a string representing the current session type.
+     *
+     * @return work or rest session
+     */
+    String getSession();
+
+    /**
+     * Retrieves the remaining time.
+     *
+     * @return remaining time in minute, second format
+     */
+    String getFormattedTime();
+
+    /**
+     * Checks whether the timer is currently running.
+     *
+     * @return true if running, false otherwise
+     */
+    @Override
+    boolean isRunning();
+
+    /**
+     * Checks whether the current session is a work session.
+     *
+     * @return true if work session, false if break session
+     */
+    boolean isWorkSession();
+}
